@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>html tutorial</title>
+		
+		<!-- linking css -->
+		<link rel="stylesheet" href="style.css"> 
+		
+	</head>
+
+
+	<body>
+		<h1>Dog Photo App</h1> <!-- This is a h1 tag -->
+		
+		<main>
+			<p>To see more cute dog pictures, click <a href="https://www.google.com/search?q=dog+images+hd&rlz=1C1CHBD_enIN801IN801&sxsrf=ALeKk00fDqzVOEBHazvOZ33kk94OSVwk2Q:1594401512524&source=lnms&tbm=isch&sa=X&ved=2ahUKEwikzKG-mMPqAhV79nMBHUwFBawQ_AUoAXoECA0QAw&biw=1536&bih=792">here</a>  <!-- anchor tag nested inside a paragraph tag -->
+			
+			<br>  <!-- line break -->
+			
+			<img class="doggo" src="https://images.unsplash.com/photo-1510771463146-e89e6e86560e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1362&q=80" alt="cute dog image"> <!-- image tag with external image source -->
+			
+			<p> Things dogs love:- </p>
+			<ul>
+				<li>Meat</li>
+				<li>Sleep</li>
+				<li>Friend</li>
+			</ul>
+			
+			<p>Things dogs hate:-</p>
+			<ol>
+				<li>Loud noise</li>
+				<li>Ignorance</li>
+				<li>Bad smell</li>
+			</ol>
+			
+			
+			<form action="/submit-photo">
+			
+				<p>Choose breed:-</p>
+				
+				<label for="pug">
+					<input id="pug" type="radio" value="pug" name="breed" checked> Pug
+				</label>
+				<label for="german-shepard">
+					<input id="german-shepard" type="radio" value="GS" name="breed"> German Shepard
+				</label>
+				<label for="bulldog">
+					<input id="bulldog" type="radio" value="bulldog" name="breed"> Bulldog
+				</label>
+				<label for="Golden-Retriever">
+					<input id="Golden-Retriever" type="radio" value="Golden-Retriever" name="breed"> Golden Retriever
+				</label>
+				<label for="husky">
+					<input id="husky" type="radio" value="husky" name="breed"> Husky
+				</label> <br>
+				
+				<label for="indoor">
+					<input id="indoor" type="radio" value="in" name="indoor-outdoor" checked>Indoor
+				</label>
+				<label for="outdoor">
+					<input id="outdoor" type="radio" value="out" name="indoor-outdoor">Outdoor
+				</label> <br>
+				
+				<label for="loving">
+					<input id="loving" type="checkbox" value="loving" name="personality" checked>Loving
+				</label>
+				<label for="lazy">
+					<input id="lazy" type="checkbox" value="lazy" name="personality">Lazy
+				</label>
+				<label for="energetic">
+					<input id="energetic" type="checkbox" value="energetic" name="personality">Energetic
+				</label>
+
+				<br>
+				<input type="text" placeholder="Dog photos URL" required>
+				<button type="submit">submit</button>
+			</form>
+			
+		</main>	
+
+	</body>
+</html>
